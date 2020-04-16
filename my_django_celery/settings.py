@@ -10,13 +10,15 @@ import os
 
 # Celery settings
 
-CELERY_BROKER_URL = 'redis://:123456@127.0.0.1:6379/0'
+CELERY_BROKER_URL = 'redis://:123456@127.0.0.1:6379/1'
+CELERY_RESULT_BACKEND = 'redis://:123456@127.0.0.1:6379/2'
 
 #: Only add pickle to this list if your broker is secured
 #: from unwanted access (see userguide/security.html)
 CELERY_ACCEPT_CONTENT = ['json']
-CELERY_RESULT_BACKEND = 'redis://:123456@127.0.0.1:6379/2'
 CELERY_TASK_SERIALIZER = 'json'
+
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
 
 """
@@ -60,6 +62,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_celery_app',
+    'django_celery_beat'
 ]
 
 MIDDLEWARE = [
