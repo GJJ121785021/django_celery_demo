@@ -2,13 +2,14 @@
 
 
 #使用django-celery-beat 定时调度任务
+
 1.安装： pip install django-celery-beat
 
 2.将django_celery_beat模块添加到INSTALLED_APPS   Django项目中settings.py：
 
-INSTALLED_APPS = (
-    'django_celery_beat',
-)
+INSTALLED_APPS = (\
+    'django_celery_beat',\
+)\
 
 3.应用Django数据库迁移，以便创建必要的表： python manage.py migrate
 
@@ -25,7 +26,7 @@ CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
 1.在启动任务进入admin中后会报错
 
-t = DEBUG_ENGINE.from_string(fh.read())　　
+t = DEBUG_ENGINE.from_string(fh.read())　　\
 　　UnicodeDecodeError: 'gbk' codec can't decode byte 0xa6 in position 9737: illegal multibyte sequence
   
 直接修改源码：
