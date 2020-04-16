@@ -15,6 +15,9 @@ python manage.py runserver
 
 
 
+另外如果需要定时调度任务的，<a href="https://github.com/GJJ121785021/django_celery_demo/tree/celery_beat"> 点击跳转</a>
+
+
 ## 有几点需要注意
 1.不要安装django-celery ，安装后似乎会对celery有影响，之前的配置需要修改成代码中被注释的部分（注释的也不完善）\
 2.配置中有两个redis url， 如果写错了这个配置  'redis://:123456@127.0.0.1:6379/0'\
