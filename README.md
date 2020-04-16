@@ -15,7 +15,8 @@ python manage.py runserver
 
 
 
-另外如果需要定时调度任务的，<a href="https://github.com/GJJ121785021/django_celery_demo/tree/celery_beat"> 点击跳转</a>
+
+- 另外如果需要定时调度任务的，可以使用django-celery-beat,<a href="https://github.com/GJJ121785021/django_celery_demo/tree/celery_beat"> 例子</a>
 
 
 ## 有几点需要注意
