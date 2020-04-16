@@ -9,7 +9,7 @@
 
 INSTALLED_APPS = (\
     'django_celery_beat',\
-)\
+)
 
 3.应用Django数据库迁移，以便创建必要的表： python manage.py migrate
 
