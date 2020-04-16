@@ -3,6 +3,7 @@
 使用python == 3.5 或 3.6  (3.7以上会因为celery内有async关键字而报错（可以改但有点麻烦）)
 
 pip install celery
+
 pip install eventlet  （Windows需安装这个，并且在启动命令后加-P eventlet）
 
 
