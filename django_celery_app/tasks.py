@@ -1,19 +1,8 @@
-from __future__ import absolute_import
+from __future__ import absolute_import, unicode_literals
 
 import time
 
-from celery import task
-
 from celery import shared_task
-
-
-# from celery.task import tasks
-# from celery.task import Task
-# class AddClass(Task):
-#    def run(x,y):
-#        print "%d + %d = %d"%(x,y,x+y)
-#        return x+y
-# tasks.register(AddClass)
 
 
 @shared_task

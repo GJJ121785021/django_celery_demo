@@ -15,7 +15,7 @@ CELERY_BROKER_URL = 'redis://:123456@127.0.0.1:6379/0'
 #: Only add pickle to this list if your broker is secured
 #: from unwanted access (see userguide/security.html)
 CELERY_ACCEPT_CONTENT = ['json']
-CELERY_RESULT_BACKEND = CELERY_BROKER_URL
+CELERY_RESULT_BACKEND = 'redis://:123456@127.0.0.1:6379/2'
 CELERY_TASK_SERIALIZER = 'json'
 
 
