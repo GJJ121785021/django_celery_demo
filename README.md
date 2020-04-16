@@ -1,4 +1,4 @@
-# django_celery_demo
+# django_celery_beat
 
 
 #使用django-celery-beat 定时调度任务
