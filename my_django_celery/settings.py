@@ -21,6 +21,10 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
 
+CELERYD_MAX_TASKS_PER_CHILD = 40  # 每个worker执行了多少任务就会死掉
+
+# CELERY_IGNORE_RESULT = True  # 在Django的settings中设置忽略celery任务执行结果
+
 """
 Django settings for my_django_celery project.
 
